@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Vojon Bari</string>
-    <string name="networkTitle">Status</string>
-    <string name="networkResult">System occured error in process. Please talk to Moderator</string>
-
-    <string name="Nessbit">Developed By <a href="http://nessbit.com/">Nessbit</a></string>
-</resources>
