@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="156dp"
+            android:layout_height="156dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="75dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="স্বাগতম ভোজন বাড়িতে"
+            android:textColor="@color/violet"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="বাংলাদেশের বাঙ্গালী রান্না, বাংলাদেশি খাবার সবার সামনে তুলে ধরার ক্ষুদ্র প্রচেষ্টা। বাংলাদেশের বিভিন্ন এলাকার আঞ্চলিক এবং শহরের মুখরোচক খাবারের রেসিপি বিভিন্ন এলাকার আঞ্চলিক এবং শহরের মুখরোচক খাবারের রেসিপির প্লাটফর্ম হল ভোজন বাড়ি"
+            android:textColor="@color/black_effective"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onLogin"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/btn_violet"
+        android:elevation="8dp"
+        android:text="সাবস্ক্রাইব করুন"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</FrameLayout>
