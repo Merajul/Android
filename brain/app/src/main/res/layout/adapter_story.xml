@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="8dp"
+    android:elevation="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/lobstertwo"
+        android:gravity="right"
+        android:paddingRight="24dp"
+        android:text="Q"
+        android:textColor="@color/black_effective"
+        android:textSize="64dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/q_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/questionTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Question ?"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupRg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <RadioButton
+                android:id="@+id/optionRb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stealing Things"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/optionRb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telling Lies"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/optionRb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stealing Things"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/optionRb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telling Lies"
+                android:textColor="@color/white" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</FrameLayout>

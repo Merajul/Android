@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6D449B</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#6D449B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_white">#fcfcfc</color>
+    <color name="app_button_blue">#00796B</color>
+    <color name="light_grey_semi_transparent">#80313435</color>
+
+    <color name="black_effective">#2a2a2a</color>
+    <color name="white_background">#FAFAFA</color>
+    <color name="violet">#6D449B</color>
+    <color name="deep_violet">#942E77</color>
+    <color name="yellow">#FF9800</color>
+</resources>

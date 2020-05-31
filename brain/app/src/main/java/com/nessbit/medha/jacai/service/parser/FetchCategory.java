@@ -1,0 +1,54 @@
+package com.nessbit.medha.jacai.service.parser;
+
+import android.app.AlertDialog;
+import android.content.Context;
+
+import com.nessbit.medha.jacai.R;
+import com.nessbit.medha.jacai.model.Category;
+import com.nessbit.medha.jacai.service.network.NetworkCallback;
+import com.nessbit.medha.jacai.service.network.NetworkClient;
+import com.nessbit.medha.jacai.service.network.NetworkHelper;
+
+import java.util.ArrayList;
+
+import dmax.dialog.SpotsDialog;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
+import static com.nessbit.medha.jacai.utils.DialogUtils.showFetchingDialog;
+
+public class FetchCategory {
+
+    private Context context;
+    private NetworkCallback callback;
+
+    public FetchCategory(Context context) {
+        this.context = context;
+        callback = (NetworkCallback) context;
+    }
+
+    public void execute() {
+        SpotsDialog spotsDialog = showFetchingDialog(context);
+        spotsDialog.show();
+        AlertDialog alertDialog = new AlertDialog.Builder(context).create();
+        alertDialog.setTitle(context.getResources().getString(R.string.networkTitle));
+
+        NetworkHelper networkHelper = NetworkClient.newNetworkClient().create(NetworkHelper.class);
+        Call<ArrayList<Category>> call = networkHelper.getCategory();
+        call.enqueue(new Callback<ArrayList<Category>>() {
+            @Override
+            public void onResponse(Call<ArrayList<Category>> call, Response<ArrayList<Category>> response) {
+                spotsDialog.dismiss();
+                callback.onTaskFinish(response.body());
+            }
+
+            @Override
+            public void onFailure(Call<ArrayList<Category>> call, Throwable t) {
+                spotsDialog.dismiss();
+                alertDialog.setMessage(context.getResources().getString(R.string.networkResult));
+                alertDialog.show();
+            }
+        });
+    }
+}

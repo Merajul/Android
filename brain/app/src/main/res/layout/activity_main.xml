@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_background"
+    tools:context=".view.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="50dp"
+            android:adjustViewBounds="false"
+            android:src="@drawable/logo"
+            app:srcCompat="@drawable/logoo"
+            tools:srcCompat="@drawable/logoo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/spinner_background"
+            android:elevation="12dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/custom_b"
+                android:paddingLeft="25dp"
+                android:text="+88 01"
+                android:textColor="@color/black_effective"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/mobileEt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/custom_b"
+                android:gravity="left"
+                android:hint=""
+                android:inputType="phone"
+                android:textColor="@color/black_effective"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/subscribeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone"
+            android:background="@drawable/btn_gradient"
+            android:elevation="8dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:stateListAnimator="@null"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationZ="2dp" />
+
+    </LinearLayout>
+
+</FrameLayout>
