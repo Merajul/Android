@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/violet"
+        android:text="ভোজন বাড়ি"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center"
+        android:background="@color/violet"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/lobstertwo"
+        android:text="Version  1.0"
+        android:textSize="16sp"
+        android:textColor="@color/black_effective"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/custom_b"
+        android:text="Copyright © Nessbit Technologies Ltd, 2019"
+        android:textColor="@color/black_effective"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center"
+        android:background="@color/violet"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="25dp"/>
+
+    <TextView
+        android:id="@+id/famedBD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:text="@string/Nessbit"
+        android:fontFamily="@font/custom_r"
+        android:textColor="@color/black_effective"/>
+
+    <!--<TextView
+        android:layout_marginTop="4dp"
+        android:id="@+id/supportPhoneTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:text="Support : +8801923160324"
+        android:autoLink="phone"
+        android:fontFamily="@font/custom_r"
+        android:textColor="@color/black_effective"/>
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:id="@+id/supportEmailTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:text="support.nessbit.com"
+        android:autoLink="email"
+        android:fontFamily="@font/custom_r"
+        android:textColor="@color/black_effective"/> -->
+
+</LinearLayout>
